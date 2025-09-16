@@ -1,10 +1,14 @@
 # KILOMETER TO MILE CONVERTER ( VICE VERSA)
 
 def main():
-
-      choosing=input("Hi there, please choose which conversion you would like to perform\n"
+ while True:
+      choosing=input("Hi their, please choose which conversion you would like to perform\n"
                    "a) KM to Miles\n "
-                   "b) Miles to KM .").lower().strip()
+                   "b) Miles to KM "
+                     "or type q for quitting : ").lower().strip()
+      if choosing=="q":
+          print("than you for using this converter")
+          break
       if choosing=="a":
           KM=float(input("Please enter the no.of KM you would like to convert : "))
           calci_a=round(KM*0.62137119,3)
@@ -16,13 +20,5 @@ def main():
           print(f"{miles} miles = {calci_b} km")
       else:
           print("please enter correct choice")
-      repetition()
-
-def repetition():
-      while True:
-            repitationChance=input("would you like to continue with the conversions\n")
-            if repitationChance=="yes":
-                  main()
-            else:
-                 break
+      
 main()
