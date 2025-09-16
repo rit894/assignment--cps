@@ -1,0 +1,12 @@
+# ADDRESS PRESENTER
+name=input("Enter your name: ").title().strip()
+street=input(f"hi {name}, can you please give me your street name : ").title().strip()
+city=input("similarly  give your city name: ").title().strip()
+state=input("and  what  state  do you live in? : ").title().strip()
+postalCode=input(f"Okay {name}, please give me your postal code: ").title().strip()
+country=input("now please tell me to which country you belong to : ").title().strip()
+print(f" Hi { name } here is  your address: \n"
+      f"{street}\n"
+      f"{city}\n"
+      f" {state} - {postalCode}\n" 
+      f" {country}")
