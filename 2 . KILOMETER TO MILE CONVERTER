@@ -2,7 +2,7 @@
 
 def main():
  while True:
-      choosing=input("Hi their, please choose which conversion you would like to perform\n"
+      choosing=input("Hi there, please choose which conversion you would like to perform\n"
                    "a) KM to Miles\n "
                    "b) Miles to KM "
                      "or type q for quitting : ").lower().strip()
