@@ -1,0 +1,28 @@
+ fahrenheit to celsius converter
+
+def main():
+    while True:
+      choosing = input("Hi their, please choose which conversion you would like to perform\n"
+    "a) fahrenheit to celsius\n "
+    "b) celsius to fahrenheight \n"
+     "or type q for quitting ").lower().strip()
+      if choosing=="q":
+        print("Thank you for using this converter")
+        break
+      if choosing == "a":
+       fahrenheit= float(input("Please enter the temperature in fahrenheit  : "))
+       calci_a = round(fahrenheit * (-17.222222), 3)
+       print(f"{fahrenheit} F = {calci_a} C")
+
+      elif choosing == "b":
+        celsius = float(input("Please enter the temperature in celsius : "))
+        calci_b = round(celsius / 0.62137119, 3)
+        print(f"{celsius} C = {calci_b} F")
+      else:
+        print("please enter correct choice")
+
+
+
+
+main()
+
