@@ -1,0 +1,28 @@
+# KILOMETER TO MILE CONVERTER ( VICE VERSA)
+
+def main():
+
+      choosing=input("Hi there, please choose which conversion you would like to perform\n"
+                   "a) KM to Miles\n "
+                   "b) Miles to KM .").lower().strip()
+      if choosing=="a":
+          KM=float(input("Please enter the no.of KM you would like to convert : "))
+          calci_a=round(KM*0.62137119,3)
+          print (f"{KM} km = {calci_a} miles")
+
+      elif choosing=="b":
+          miles=float(input("Please enter the no. of miles you would like to convert : "))
+          calci_b=round(miles/0.62137119,3)
+          print(f"{miles} miles = {calci_b} km")
+      else:
+          print("please enter correct choice")
+      repetition()
+
+def repetition():
+      while True:
+            repitationChance=input("would you like to continue with the conversions\n")
+            if repitationChance=="yes":
+                  main()
+            else:
+                 break
+main()
