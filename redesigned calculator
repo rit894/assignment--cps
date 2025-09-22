@@ -1,0 +1,23 @@
+num1 = int(input("Please enter the first number : "))
+num2 = int(input("Please enter the second number : "))
+MathematicalOperator = input("Please enter the mathematical operator \n"
+                             " (like +,-,*,/) : ").strip()
+
+if MathematicalOperator == "+":
+    print(num1 + num2)
+elif MathematicalOperator == "-":
+    print(num1 - num2)
+elif MathematicalOperator == "*":
+    print(num1 * num2)
+elif MathematicalOperator == "/":
+    print(num1 / num2)
+else:
+    addtionalOperator = input("Please enter the additional operator(symbol)\n"
+                              "for finding quotient please enter //\n"
+                              "for finding remainder please enter %\n ").strip()
+    if addtionalOperator == "//":
+        print(num1 // num2)
+    elif addtionalOperator == "%":
+        print(num1 % num2)
+    else:
+        print("please enter correct choice")
