@@ -1,0 +1,14 @@
+import math
+
+choosing=input("Hi their, please choose which what you would like to find \n"
+               "a) sq root of a number\n"
+               "b)cubth root of a number\n")
+num1 = int(input("Please enter the first number : "))
+if choosing=="a":
+    sqroot=math.sqrt(num1)
+    print(sqroot,"  is the square root of ",num1)
+elif choosing=="b":
+    cubex=math.pow(num1,3)
+    print(cubex,"  is the cubic root of ",num1)
+else:
+        print("please enter correct choice")
