@@ -1,0 +1,12 @@
+# Take input from the user
+n = int(input("Enter a number: "))
+
+# Check divisibility and display appropriate output
+if n % 3 == 0 and n % 5 == 0:
+    print("fizz buzz")
+elif n % 3 == 0:
+    print("fizz")
+elif n % 5 == 0:
+    print("buzz")
+else:
+    print(n)
